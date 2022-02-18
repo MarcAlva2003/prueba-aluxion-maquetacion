@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prueba técnica: UI Developer recreando una pagina web con dos interfaces y animaciones.">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!--Header-->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-logo-container">
+                <h2 class="header-logo" id="header-logo">mater</h2>
+            </div><!--FIN div logo-->
+            <div onclick="abrirMenu()" class="header-menu-icon">
+                <svg id="open-close-menu" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg>
+            </div><!--FIN div icono-->
+        </div>
+    </header><!--Fin header-->
+
+
+    <!--Cuerpo-->
+    <section class="products" id="products">
+        <!-- <div class="product">
+            <div class="product-content">
+                <div class="product-img">
+                    <img src="recursos/dunes-anthrazite.png" alt="">
+                </div>
+                <div class="product-info">
+                    <p class="soft-letter">Autor asdasdasd</p>
+                    <h2 class="product__product-name">Nombre del producto fachero</h2>
+                    <p class="soft-letter product-desc">Esta es la descripcion del producto la cual va a tener que ser lo suficientemente extensa para poder llegar a los tres renglones</p>
+                    <button>Product Details</button>
+                </div>
+            </div>
+        </div> -->
+    </section><!--Fin cuerpo-->
+    <div id="scroll-helper-container" class="scroll-helper-container">
+        
+    </div>
+    <footer class="footer">
+        <div class="footer-content" id="footer-content">
+
+        </div>
+    </footer>
+    <div id="menu-container" class="menu-container">
+        <div class="menu-body">
+            <ul class="menu-items" id="menu-items">
+                <li class="menu-item" id="menu-desplegable">
+                    Collection
+                    <ul class="submenu-container cerrado" id="submenu">
+                        <li id="mostrar-imagen" class="submenu-item">Furniture</li>
+                        <li class="submenu-item">Lighting</li>
+                        <li class="submenu-item">Accesories</li>
+                    </ul>
+                </li>
+                <li class="menu-item">Design</li>
+                <li class="menu-item">Crafmanship</li>
+                <li class="menu-item">Ethics</li>
+            </ul>
+            <div class="menu-img-container">
+                <img id="imagen-menu" src="">
+            </div>
+        </div>
+        <div class="menu-footer">
+            <div class="menu-footer__options" id="menu-footer__options">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Dealers</a>
+                <a href="#">News</a>
+                <a href="#">Care</a>
+                <a href="#">Press</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

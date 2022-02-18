@@ -1,0 +1,65 @@
+:root{
+    --negro: #000;
+    --blanco: #fff;
+    --blanco-transparete: rgba(255, 255, 255, 0.562);
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px; /*1rem = 10px*/
+    background-color: var(--oscuro);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*GLOBALES*/
+h1,
+h2,
+h3,
+h4,
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.negrita{
+    font-weight: 500;
+}
+
+
+.container{
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid black;
+    width: 20rem;
+    height: 10rem;
+}
+div{
+    width: 100%;
+    height: 20vh;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.black{
+    background-color: black;
+}
+
+.red{
+    scroll-snap-align: center;
+        scroll-snap-stop: always;
+}
